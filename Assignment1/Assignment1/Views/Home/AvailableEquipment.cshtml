@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Assignment1.Models.Equipment>
+
+<h2>Available Equipment</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var equipment in Model)
+        {
+            <tr>
+                <td>@equipment.Id</td>
+                <td>@equipment.Type</td>
+                <td>@equipment.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
