@@ -6,16 +6,32 @@ namespace Assignment1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private static List<Equipment> equipmentList = new List<Equipment>();
+
+
+        public HomeController()
         {
-            _logger = logger;
+            if (!equipmentList.Any())
+            {
+                equipmentList.Add(new Equipment { Id = 1, Type = EquipmentType.Laptop, Description = "Dell Laptop", Availability = true });
+                equipmentList.Add(new Equipment { Id = 2, Type = EquipmentType.Phone, Description = "iPhone X", Availability = false });
+                equipmentList.Add(new Equipment { Id = 3, Type = EquipmentType.Tablet, Description = "iPad Pro", Availability = true });
+            }
         }
-
         public IActionResult Index()
         {
             return View();
+        }
+
+        public ViewResult AllEquipment()
+        {
+            return View(equipmentList);
+        }
+        public ViewResult AvailableEquipment()
+        {
+            var availableEquipment = equipmentList.Where(e => e.Availability).ToList();
+            return View(availableEquipment);
         }
 
         [HttpGet]
@@ -30,7 +46,7 @@ namespace Assignment1.Controllers
             Repository.AddResponse(request);
             return View("Received", request);
         }
-        public IActionResult Privacy()
+        public ViewResult Requests()
         {
             return View();
         }

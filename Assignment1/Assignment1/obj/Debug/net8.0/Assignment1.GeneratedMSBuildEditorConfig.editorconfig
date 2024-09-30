@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\madus\Downloads\ITEquipmentSystem\Assignment1\Assignment1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/madus/Downloads/ITEquipmentSystem/Assignment1/Assignment1/Views/Home/AllEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxFcXVpcG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/madus/Downloads/ITEquipmentSystem/Assignment1/Assignment1/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
