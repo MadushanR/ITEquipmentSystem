@@ -18,6 +18,18 @@ namespace Assignment1.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Create(Request request)
+        {
+            Repository.AddResponse(request);
+            return View("Received", request);
+        }
         public IActionResult Privacy()
         {
             return View();
