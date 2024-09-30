@@ -48,7 +48,7 @@ namespace Assignment1.Controllers
         }
         public ViewResult Requests()
         {
-            return View();
+            return View(Repository.Responses);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Assignment1.Models.Request>
+
+<h2>All Requests</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Role</th>
+            <th>Equipment</th>
+            <th>Details</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Assignment1.Models.Request request in Model)
+        {
+            <tr>
+                <td>@request.Id</td>
+                <td>@request.Name</td>
+                <td>@request.Email</td>
+                <td>@request.PhoneNumber</td>
+                <td>@request.Role</td>
+                <td>@request.Equipment</td>
+                <td>@request.RequestDetails</td>
+                <td>@request.Duration</td>
+            </tr>
+        }
+    </tbody>
+</table>

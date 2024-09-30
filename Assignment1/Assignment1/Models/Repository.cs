@@ -8,7 +8,7 @@
         public static void AddResponse(Request response)
         {
             response.Id = nextId++;
-            Console.WriteLine(response); responses.Add(response);
+            responses.Add(response);
         }
     }
 }
