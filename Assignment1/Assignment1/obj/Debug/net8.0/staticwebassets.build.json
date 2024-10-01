@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OeLT1yvTaljeN7OGHWePY2ovPQyCJMHDPlnqTt9r9JU=",
+  "Hash": "KuoK7Y4l1Yi+LvbPxGZiV6YQ837kknfltyv1U3MK69g=",
   "Source": "Assignment1",
   "BasePath": "_content/Assignment1",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\madus\\Downloads\\ITEquipmentSystem\\Assignment1\\Assignment1\\wwwroot\\images\\logo.png",
+      "SourceId": "Assignment1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\madus\\Downloads\\ITEquipmentSystem\\Assignment1\\Assignment1\\wwwroot\\",
+      "BasePath": "_content/Assignment1",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\madus\\Downloads\\ITEquipmentSystem\\Assignment1\\Assignment1\\wwwroot\\js\\site.js",

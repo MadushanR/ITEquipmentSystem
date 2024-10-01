@@ -14,9 +14,10 @@ namespace Assignment1.Controllers
         {
             if (!equipmentList.Any())
             {
-                equipmentList.Add(new Equipment { Id = 1, Type = EquipmentType.Laptop, Description = "Dell Laptop", Availability = true });
-                equipmentList.Add(new Equipment { Id = 2, Type = EquipmentType.Phone, Description = "iPhone X", Availability = false });
-                equipmentList.Add(new Equipment { Id = 3, Type = EquipmentType.Tablet, Description = "iPad Pro", Availability = true });
+                equipmentList.Add(new Equipment { Id = 1, Type = EquipmentType.Laptop, Description = "ASUS TUF F15", Availability = true });
+                equipmentList.Add(new Equipment { Id = 2, Type = EquipmentType.Phone, Description = "iPhone 16", Availability = false });
+                equipmentList.Add(new Equipment { Id = 3, Type = EquipmentType.Tablet, Description = "iPad Pro M4", Availability = true });
+                equipmentList.Add(new Equipment { Id = 4, Type = EquipmentType.Another, Description = "RaspberryPI", Availability = true });
             }
         }
         public IActionResult Index()
@@ -35,13 +36,13 @@ namespace Assignment1.Controllers
         }
 
         [HttpGet]
-        public ViewResult Create()
+        public ViewResult RequestForm()
         {
             return View();
         }
 
         [HttpPost]
-        public ViewResult Create(Request request)
+        public ViewResult RequestForm(Request request)
         {
             Repository.AddResponse(request);
             return View("Received", request);
